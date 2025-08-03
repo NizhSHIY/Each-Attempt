@@ -1,0 +1,64 @@
+{
+	"geode": "4.6.3",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
+	},
+	"id": "nizhshiy.eachattempt",
+	"name": "Each Attempt",
+	"version": "v1.0.0",
+	"developer": "NizhSHIY",
+	"description": "Each attempt removes a certain number of dangerous objects",
+	"tags": ["gameplay", "customization"],
+  "settings": {
+    "enabled": {
+      "name": "Enable",
+      "description": "Turns the mod on/off completely",
+      "type": "bool",
+      "default": true
+    },
+    "remove-count": {
+      "name": "Number of objects to be removed",
+      "description": "How many objects will be deleted per death.",
+      "type": "int",
+      "default": 1,
+      "min": 1,
+      "max": 100,
+      "control": {
+        "slider": true
+      }
+    },
+    "removal-radius": {
+      "name": "Removal radius (in blocks)",
+      "description": "Objects are only removed within this radius from the death location. 0 = infinite radius.",
+      "type": "float",
+      "default": 0,
+      "min": 0,
+      "max": 50,
+      "control": {
+        "slider": true
+      }
+    },
+    "removal-mode": {
+      "name": "Delete mode",
+      "description": "Specifies which object will be deleted.",
+      "type": "enum",
+      "default": 0,
+      "keys": ["Random", "Closest to the place of death", "First in level", "Last in level"]
+    },
+    "custom-ids": {
+      "name": "Additional object IDs",
+      "description": "List the IDs of other objects to be deleted, separated by commas (e.g. 1,2,3).",
+      "type": "string",
+      "default": ""
+    },
+    "show-particles": {
+      "name": "Show particles when removed",
+      "description": "Enables a visual effect when an object disappears.",
+      "type": "bool",
+      "default": true
+    }
+  }
+}
