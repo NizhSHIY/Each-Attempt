@@ -46,6 +46,12 @@
       "description": "List the IDs of other objects to be deleted, separated by commas (e.g. 1,2,3).",
       "type": "string",
       "default": ""
+    },
+	"show-particles": {
+      "name": "Show particles when removed",
+      "description": "Enables a visual effect when an object disappears.",
+      "type": "bool",
+      "default": true
     }
   }
 }
